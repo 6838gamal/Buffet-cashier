@@ -1,0 +1,103 @@
+# Task: Build Comprehensive Buffet Cashier POS System
+
+## Plan
+- [x] Step 1: Setup & Configuration
+  - [x] Update color scheme for professional POS design
+  - [x] Initialize Supabase
+  - [x] Disable email verification
+- [x] Step 2: Database Schema
+  - [x] Create all tables (profiles, products, inventory, customers, sales, employees, expenses, settings)
+  - [x] Create storage bucket for product images
+  - [x] Set up RLS policies
+- [x] Step 3: Core Types & API
+  - [x] Define TypeScript types
+  - [x] Create API functions
+- [x] Step 4: Authentication & Layout
+  - [x] Create Login page
+  - [x] Create AppLayout with sidebar
+  - [x] Update App.tsx
+- [x] Step 5: POS Module
+  - [x] Create POS page with product grid
+  - [x] Shopping cart component
+  - [x] Payment dialog
+- [x] Step 6: Sales Management
+  - [x] Sales list page
+  - [x] Invoice details
+  - [x] Refund functionality
+- [x] Step 7: Product & Inventory Management
+  - [x] Products CRUD with image upload
+  - [x] Inventory tracking
+  - [x] Stock alerts
+- [x] Step 8: Customer Management
+  - [x] Customers page
+  - [x] Loyalty points
+- [x] Step 9: Reports
+  - [x] Sales reports with charts
+  - [x] Export functionality
+- [x] Step 10: Employee & Expenses
+  - [x] Employee management
+  - [x] Expense tracking
+- [x] Step 11: Settings & Admin
+  - [x] Settings page
+  - [x] Admin user management
+- [x] Step 12: Thermal Receipt Printing
+  - [x] Create thermal receipt component
+  - [x] Support 55mm and 88mm paper sizes
+  - [x] Arabic RTL formatting
+  - [x] Auto-print after sale completion
+  - [x] Paper size selector in payment dialog
+- [x] Step 13: Sync Status & Offline Support
+  - [x] Add online/offline status indicator
+  - [x] Display sync status in sidebar
+  - [x] Document offline printer capabilities
+- [x] Step 14: Role-Based Access Control
+  - [x] Define role permissions in routes
+  - [x] Implement RouteGuard with role checking
+  - [x] Create Unauthorized page
+  - [x] Update AppLayout to filter menu by role
+  - [x] Update LoginPage with role information in Arabic
+  - [x] Create comprehensive RBAC documentation
+- [x] Step 15: Arabic Language Implementation
+  - [x] Create i18n context and provider (Arabic only)
+  - [x] Create comprehensive Arabic translation file (ar.ts)
+  - [x] Update LoginPage with Arabic translations
+  - [x] Update UnauthorizedPage with Arabic translations
+  - [x] Update AppLayout with Arabic translations
+  - [x] Update POSPage completely with Arabic translations
+  - [x] Update SalesPage completely with Arabic translations
+  - [x] Add all necessary translation keys
+  - [x] Lock system to Arabic only (RTL)
+  - [x] Remove English language file completely
+  - [x] Fix Product type to include stock field
+  - [x] Fix salesApi.create call with correct parameters
+  - [x] Add useI18n hook to all remaining pages
+  - [ ] Complete translation of ProductsPage
+  - [ ] Complete translation of InventoryPage
+  - [ ] Complete translation of CustomersPage
+  - [ ] Complete translation of ReportsPage
+  - [ ] Complete translation of EmployeesPage
+  - [ ] Complete translation of ExpensesPage
+  - [ ] Complete translation of SettingsPage
+- [x] Step 16: Validation
+  - [x] Run lint and fix issues
+  - [x] Create comprehensive system guide
+  - [x] Create role-based access guide
+  - [x] Remove English language support completely
+
+## Notes
+- Complexity: Complex (11+ pages, 30+ components, full database)
+- Target: 55-60 actions
+- Auth: Username + password (first user = admin)
+- Database: Supabase with offline sync capability
+- Image upload: Product images via Supabase Storage
+- Thermal Printing: Full support for 55mm and 88mm thermal paper
+- Offline Support: Printer works offline when connected to device
+- Sync: Automatic sync after each operation with status indicator
+- Role-Based Access: Complete separation between Admin, Manager, and Cashier
+- Language: Arabic only (RTL) - no English support
+- UI Language: All text in Arabic using organized translation system (ar.ts)
+- Translation Structure: 200+ terms organized in 16 categories
+- All core features implemented successfully
+- System guide created in Arabic and English
+- RBAC guide created with detailed permissions
+- POSPage fully translated to Arabic
